@@ -1,0 +1,12 @@
+name: Basic Theme
+type: theme
+description: 'Basic theme for Skeletor'
+core: 8.x
+libraries:
+  - basic_theme/global-styling
+base theme: classy
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer

@@ -1,0 +1,14 @@
+body {
+    background: red;
+}
+
+h1 {
+    color: black;
+    font-style: italic;
+}
+
+div {
+    border-radius: 30%;
+    border-color: brown;
+    border-style: dotted;
+}
