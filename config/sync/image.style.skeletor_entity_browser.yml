@@ -1,0 +1,17 @@
+uuid: 6b57dead-8932-4308-8fbd-f1b728996c12
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZZLVbfLobMy1iaYJoXpMNVVbBZJb_v2ZIJ8VF9gaN4c
+name: skeletor_entity_browser
+label: 'Skeletor Entity Browser'
+effects:
+  1a80536b-365a-408f-975a-49db1799c26a:
+    uuid: 1a80536b-365a-408f-975a-49db1799c26a
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: false
