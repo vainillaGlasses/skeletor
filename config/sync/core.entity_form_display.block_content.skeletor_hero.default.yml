@@ -1,0 +1,44 @@
+uuid: 18524c2c-4455-4cb9-8a0c-bd197428a359
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_hero
+    - field.field.block_content.skeletor_hero.field_component_hero
+  module:
+    - paragraphs
+_core:
+  default_config_hash: w28GB4UeEQ_t_JfjwxizARIX4YMBLAgfhFcswMxGS7g
+id: block_content.skeletor_hero.default
+targetEntityType: block_content
+bundle: skeletor_hero
+mode: default
+content:
+  field_component_hero:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

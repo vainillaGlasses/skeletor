@@ -1,0 +1,50 @@
+uuid: 1af8293c-c605-45fc-ad3a-03a3c5eee292
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.skeletor_single_image_browser
+    - field.field.paragraph.component_hero.field_hero_content
+    - field.field.paragraph.component_hero.field_hero_image
+    - paragraphs.paragraphs_type.component_hero
+  module:
+    - entity_browser
+    - paragraphs
+_core:
+  default_config_hash: RR4PHMG-ujeULJnzxgS6TNf0qVIOdwh0dSMeBE2849M
+id: paragraph.component_hero.default
+targetEntityType: paragraph
+bundle: component_hero
+mode: default
+content:
+  field_hero_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    weight: 1
+    settings:
+      entity_browser: skeletor_single_image_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

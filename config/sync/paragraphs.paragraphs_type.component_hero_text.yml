@@ -1,0 +1,11 @@
+uuid: 530973b8-2774-4565-a729-0192fc443786
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pnmrYdqPPL590k2lYqpSc0X3qB0GprzJv7yNSk4JFXQ
+id: component_hero_text
+label: 'Hero Text'
+icon_uuid: null
+description: 'Container for text inside hero component.'
+behavior_plugins: {  }

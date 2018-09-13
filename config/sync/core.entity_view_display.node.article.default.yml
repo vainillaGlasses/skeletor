@@ -1,0 +1,27 @@
+uuid: 54122bd4-cf4c-4701-90d3-db2362957c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_article_hero_banner
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_article_hero_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true

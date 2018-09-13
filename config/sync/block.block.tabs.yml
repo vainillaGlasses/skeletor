@@ -1,0 +1,22 @@
+uuid: 9c21e908-29da-42b0-9ba5-c2bb9acfd189
+langcode: en
+status: true
+dependencies:
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: N6dxvtTbvOnTulCD3-JBuv4BpdaVAT0ag_ojXBnPW1Y
+id: tabs
+theme: barebones_bootstrap_STARTERKIT
+region: help
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

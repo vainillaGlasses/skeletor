@@ -1,0 +1,22 @@
+uuid: 643732c1-a0eb-4d94-9bcc-260f446abe9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: n9_VMDtMrBBchtBVQ3LXM2XpgjX2tfFUO1WU2NFRdDw
+id: mainpagecontent
+theme: barebones_bootstrap_STARTERKIT
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

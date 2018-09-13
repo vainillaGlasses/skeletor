@@ -1,0 +1,13 @@
+uuid: 25ef3202-0f9f-40c2-9467-d1b9c41a0a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_hero
+_core:
+  default_config_hash: tlLlsyny8qhJCqxmbF_HqIMEcjrO4aoQXAdTLdf9c68
+id: block_content.skeletor_hero
+target_entity_type_id: block_content
+target_bundle: skeletor_hero
+default_langcode: site_default
+language_alterable: false

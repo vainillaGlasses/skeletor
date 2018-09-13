@@ -1,0 +1,27 @@
+uuid: f081e1bb-c66e-4a79-9bba-268080cfe6d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_hero
+    - field.field.block_content.skeletor_hero.field_component_hero
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: LvK0it0LElvoq-XgMTb5DWx-eoa7JZMrXf2wIC27FT0
+id: block_content.skeletor_hero.default
+targetEntityType: block_content
+bundle: skeletor_hero
+mode: default
+content:
+  field_component_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

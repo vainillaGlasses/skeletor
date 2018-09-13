@@ -1,4 +1,4 @@
 admin: seven
-default: basic_theme
+default: barebones_bootstrap_STARTERKIT
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg

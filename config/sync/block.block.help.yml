@@ -1,0 +1,22 @@
+uuid: d9d13e23-3056-4db8-9606-1ee4d5792d64
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: 6wvmSGnyan08c8tgvWMeU33LQcXwh2vbz54JHTCeCMA
+id: help
+theme: barebones_bootstrap_STARTERKIT
+region: help
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

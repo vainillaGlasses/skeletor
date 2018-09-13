@@ -1,0 +1,17 @@
+uuid: 5ef97fa4-557a-487a-b4ff-d76bbdb6c78a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_xs_2x
+label: 'Hero xs @2x'
+effects:
+  97a9cce0-da86-46ff-a8ae-80ea0ea57241:
+    uuid: 97a9cce0-da86-46ff-a8ae-80ea0ea57241
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1152
+      height: 1240
+      crop_type: focal_point

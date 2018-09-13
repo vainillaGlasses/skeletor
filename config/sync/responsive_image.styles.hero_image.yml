@@ -1,0 +1,84 @@
+uuid: a3da6a68-bd36-4d36-b919-b9777f7996d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero_lg
+    - image.style.hero_lg_2
+    - image.style.hero_md
+    - image.style.hero_md_2
+    - image.style.hero_sm
+    - image.style.hero_sm_2x
+    - image.style.hero_xl
+    - image.style.hero_xl_2
+    - image.style.hero_xs
+    - image.style.hero_xs_2x
+    - image.style.hero_xxl
+    - image.style.hero_xxl_2x
+  theme:
+    - barebones_bootstrap_STARTERKIT
+id: hero_image
+label: 'Hero Image'
+image_style_mappings:
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xxl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_xxl
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xxl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_xxl_2x
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_xl
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_xl_2
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.lg
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_lg_2
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_md
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.md
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_md_2
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_sm
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.sm
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_sm_2x
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_xs
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: hero_xs_2x
+breakpoint_group: barebones_bootstrap_STARTERKIT
+fallback_image_style: hero_xs

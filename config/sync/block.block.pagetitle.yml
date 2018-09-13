@@ -1,0 +1,20 @@
+uuid: d440c690-b1ab-43cd-b076-cf73dcbe8ad3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: xnXu5Go3MDQpJmQU7IQ3ID87yykF1vjxcRm3EbjapcQ
+id: pagetitle
+theme: barebones_bootstrap_STARTERKIT
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

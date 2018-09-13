@@ -1,0 +1,36 @@
+uuid: 3fc5be24-4ab3-44ae-be0c-8df89df4dc0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_hero.field_hero_content
+    - field.field.paragraph.component_hero.field_hero_image
+    - paragraphs.paragraphs_type.component_hero
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 61BJhYE8fN_mjL9y9t437SXD0AJP5otvXdbH3yj-HE0
+id: paragraph.component_hero.default
+targetEntityType: paragraph
+bundle: component_hero
+mode: default
+content:
+  field_hero_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: media_view_hero
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

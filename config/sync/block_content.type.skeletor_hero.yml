@@ -1,0 +1,10 @@
+uuid: 26e0d449-0bb7-4c1e-b20a-f687c94b290e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zwtKsUHWng90eWCggYGHErEQlIjYmCw7RMsr0Ndz3y8
+id: skeletor_hero
+label: Hero
+revision: 0
+description: 'Create hero block using Skeletor hero component.'

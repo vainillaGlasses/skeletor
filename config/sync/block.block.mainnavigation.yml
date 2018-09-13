@@ -1,0 +1,26 @@
+uuid: cfe901d6-de94-45ad-afb3-5272f45b9d7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: VHRSojcctmThXg-YQ1xe8HuBk1OhmqvwGHCl6PgbWFw
+id: mainnavigation
+theme: barebones_bootstrap_STARTERKIT
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

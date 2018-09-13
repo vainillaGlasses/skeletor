@@ -1,0 +1,21 @@
+uuid: ee790b6c-603e-440d-8d9c-db4cf4f50131
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_hero_title
+    - paragraphs.paragraphs_type.component_hero_text
+_core:
+  default_config_hash: PprjjYA6_yMrz7FzD4oZF7AolPmAj8tQNV1OXp4eqaI
+id: paragraph.component_hero_text.field_component_hero_title
+field_name: field_component_hero_title
+entity_type: paragraph
+bundle: component_hero_text
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

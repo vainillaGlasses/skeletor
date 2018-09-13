@@ -1,0 +1,22 @@
+uuid: c7fa7517-d356-48c1-8464-85600c6c77fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barebones_bootstrap_STARTERKIT
+_core:
+  default_config_hash: l-DPie62qEy_W7Skb2oSRleC7AIZRyz3u0qPoO3Q0ls
+id: breadcrumbs
+theme: barebones_bootstrap_STARTERKIT
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
