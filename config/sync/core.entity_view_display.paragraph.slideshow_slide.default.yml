@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.slideshow_slide.field_slide_image
     - field.field.paragraph.slideshow_slide.field_slide_link
     - field.field.paragraph.slideshow_slide.field_slide_text
+    - field.field.paragraph.slideshow_slide.field_slide_title
     - paragraphs.paragraphs_type.slideshow_slide
   module:
     - link
@@ -38,6 +39,14 @@ content:
   field_slide_text:
     weight: 0
     label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_slide_title:
+    weight: 3
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }

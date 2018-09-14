@@ -6,3 +6,58 @@
   max-width: 100%;
   page-break-inside: avoid;
 }
+
+.carousel__media {
+  margin: 0 auto;
+  max-width: 1920px;
+  overflow: hidden;
+  position: relative;
+
+  &::before,
+  &::after {
+    @include media-breakpoint-up(xxl) {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 12%;
+      z-index: 2;
+    }
+  }
+
+  &::before {
+    @include media-breakpoint-up(xxl) {
+      @include gradient-x(rgba($bb-blue-mid, 1), rgba($bb-blue-mid, 0));
+      left: 0;
+    }
+  }
+
+  &::after {
+    @include media-breakpoint-up(xxl) {
+      @include gradient-x(rgba($bb-blue-mid, 0), rgba($bb-blue-mid, 1));
+      right: 0;
+    }
+  }
+}
+
+.carusel__media img {
+  object-fit: cover;
+}
+  
+.carusel__inner {
+  bottom: 0;
+  font-family: $roboto-slab;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.carusel__inner .lead {
+  font-family: $roboto;
+}
+
+.carusel__inner h1 {
+  margin-bottom: 1rem;
+}
