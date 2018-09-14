@@ -1,0 +1,9 @@
+uuid: da9bd9ca-fdeb-4ce1-b682-9905f4bda5c3
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow_component
+label: 'Slideshow Component'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

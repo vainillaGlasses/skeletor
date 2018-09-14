@@ -1,0 +1,40 @@
+uuid: 7819b742-658c-45e8-a18f-9e7c41696ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_slide
+    - node.type.product
+    - paragraphs.paragraphs_type.slideshow_component
+  module:
+    - entity_reference_revisions
+id: node.product.field_product_slide
+field_name: field_product_slide
+entity_type: node
+bundle: product
+label: 'Product Slide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slideshow_component: slideshow_component
+    target_bundles_drag_drop:
+      component_hero:
+        weight: 5
+        enabled: false
+      component_hero_text:
+        weight: 6
+        enabled: false
+      slideshow_component:
+        enabled: true
+        weight: 7
+      slideshow_slide:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions
