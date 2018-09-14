@@ -1,0 +1,36 @@
+// Styles for buttons.
+// -----------------------------------------------------------------------------
+
+
+.btn {
+    &:not(.btn-link) {
+      background-color: $bb-orange;
+      border-color: $bb-orange;
+      color: $bb-extra-light;
+      font-family: $roboto;
+      font-size: $font-size-smaller;
+      font-weight: 200;
+      letter-spacing: .1875rem;
+      line-height: 1;
+      padding: 1rem 1.25rem .875rem;
+      text-transform: uppercase;
+  
+      &:focus,
+      &:hover {
+        text-decoration: none;
+        background-color: darken($bb-orange, 10%);
+        border-color: darken($bb-orange, 10%);
+      }
+  
+      @include media-breakpoint-up(md) {
+        font-size: .8125rem;
+        letter-spacing: .21875rem;
+        padding: 1.25rem 1.75rem 1.125rem;
+      }
+  
+      &:disabled {
+        opacity: 1;
+      }
+    }
+  }
+  

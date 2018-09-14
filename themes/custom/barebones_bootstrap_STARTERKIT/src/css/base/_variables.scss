@@ -1,5 +1,13 @@
 @import "~bootstrap/scss/variables";
 
+// Google Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;
+$roboto: 'Roboto', sans-serif;
+
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -31,3 +39,29 @@ $container-max-widths: (
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// font sizes.
+$font-size-base: 1rem;
+$font-size-medium: $font-size-base;
+$font-size-small: .875rem; // = 14px
+$font-size-smaller: .75rem; // = 12px
+$font-size-smallest: .625rem; // = 10px
+$font-size-large: 1.125rem; // = 18px
+$font-size-larger: 1.375; // = 22px
+$font-size-largest: 1.5rem; // = 24px
+
+// Colors
+$bb-blue: rgb(80, 101, 132);           // #506584
+$bb-blue-mid: rgb(59, 71, 89);         // #3B4759
+$bb-orange: rgb(248, 121, 55);         // #F87937
+$bb-orange-dark: rgb(177, 80, 31);     // #B1501F
+$bb-green: rgb(76, 178, 138);          // #4CB28A
+$bb-light: rgb(236, 236, 236);         // #ECECEC
+$bb-extra-light: rgb(249, 249, 250);   // #F9F9FA
+$bb-grey-light: rgb(189, 189, 189);    // #BDBDBD
+$bb-grey-midlight: rgb(151, 151, 151); // #979797
+$bb-grey-mid: rgb(221, 221, 221);      // #DDDDDD
+$bb-grey-dark: rgb(80, 80, 80);        // #505050
+$bb-dark: rgb(20, 29, 45);             // #141D2D
+$bb-steel: rgb(141, 142, 150);         // #8D8E96
+$bb-overlay: rgb(50, 56, 56);          // #323838

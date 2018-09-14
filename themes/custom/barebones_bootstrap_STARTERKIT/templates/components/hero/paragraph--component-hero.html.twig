@@ -47,12 +47,20 @@
     'jumbotron',
     'jumbotron-fluid',
     'full-width',
+    'hero',
   ]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+    <div class="hero__media">
+      {{ content.field_hero_image }}
+    </div>
+    <div class="hero__inner d-flex justify-content-center flex-column">
+      <div class="container-fluid">
+        {% block content %}
+          {{ content|without('field_hero_image') }}
+        {% endblock %}
+      </div>
+    </div>
   </div>
 {% endblock paragraph %}
