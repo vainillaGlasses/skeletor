@@ -61,3 +61,22 @@
 .carusel__inner h1 {
   margin-bottom: 1rem;
 }
+
+.hero {
+  background: $bb-blue-mid;
+  color: $bb-extra-light;
+  font-weight: 300;
+  max-height: 40rem;
+  position: relative;
+
+  &::before {
+    @include gradient-y(rgba($bb-blue-mid, 1), rgba($bb-blue-mid, .27));
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
