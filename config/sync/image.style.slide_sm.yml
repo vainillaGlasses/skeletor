@@ -1,0 +1,19 @@
+uuid: d752eda9-fe5e-49ca-92be-3a9c56c6726d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: CrTNAgAcsZZVrAMqi2C6WAyz0W25nLz6VAa8DXFdlOQ
+name: slide_sm
+label: 'Slide SM'
+effects:
+  97a5134e-446c-4397-9d0a-748c1a45cfe7:
+    uuid: 97a5134e-446c-4397-9d0a-748c1a45cfe7
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 432
+      crop_type: focal_point

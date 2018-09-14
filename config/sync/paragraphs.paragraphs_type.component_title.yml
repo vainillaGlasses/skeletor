@@ -1,0 +1,11 @@
+uuid: 1cfe0140-9b5c-490e-ab4a-024ed13f37d9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SmCx5J-TkcYulWY3XLslkepPg-VZtlyzss_Ww03p-rg
+id: component_title
+label: Title
+icon_uuid: null
+description: 'Sub-component for titles inside other components.'
+behavior_plugins: {  }

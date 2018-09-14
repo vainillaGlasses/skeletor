@@ -1,0 +1,33 @@
+uuid: e626b83b-7bb9-4060-ac61-3c5ca0c6dcec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.slide
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.slide
+  module:
+    - responsive_image
+_core:
+  default_config_hash: tzvBpNM-b63EwB0Hcbd6eDW64T9-GAk9WhWNM8lhV58
+id: media.image.slide
+targetEntityType: media
+bundle: image
+mode: slide
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      responsive_image_style: slide
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

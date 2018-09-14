@@ -1,0 +1,11 @@
+uuid: ca423a71-1b9f-4b58-8b6e-e0c2c922a64a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0e5nYy937Z6YTY5SWKfUcWJKobvK1aJUtmF4_Ihl308
+id: component_slideshow
+label: 'Slideshow Component'
+icon_uuid: null
+description: 'Wrapper for Skeletor slideshow component.'
+behavior_plugins: {  }

@@ -48,6 +48,8 @@ module:
   shortcut: 0
   skeletor_hero: 0
   skeletor_media: 0
+  skeletor_slideshow: 0
+  skeletor_title_component: 0
   svg_image: 0
   system: 0
   taxonomy: 0

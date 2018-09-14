@@ -1,0 +1,21 @@
+uuid: 63c1ef54-c2bf-414a-97cd-4a430c1b1c75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_title_title
+    - paragraphs.paragraphs_type.component_title
+_core:
+  default_config_hash: 3so2FHHCL_2PGBEdjfL2fzQ-2OlIquebvphSFYma2BE
+id: paragraph.component_title.field_component_title_title
+field_name: field_component_title_title
+entity_type: paragraph
+bundle: component_title
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

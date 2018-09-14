@@ -1,9 +1,0 @@
-uuid: 7f209b3c-5f85-4ac9-a948-f371141c28e7
-langcode: en
-status: true
-dependencies: {  }
-id: slideshow_slide
-label: 'Slideshow Slide'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

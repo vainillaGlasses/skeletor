@@ -1,0 +1,13 @@
+uuid: 4062f5fa-6d40-43aa-b323-d8608c1320a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_slideshow
+_core:
+  default_config_hash: h_ZlGumLuabgIZn3wVNquXUEOgAKTx0ILdx_2lWa6F8
+id: block_content.skeletor_slideshow
+target_entity_type_id: block_content
+target_bundle: skeletor_slideshow
+default_langcode: site_default
+language_alterable: false

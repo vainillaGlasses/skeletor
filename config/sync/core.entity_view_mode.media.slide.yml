@@ -1,0 +1,12 @@
+uuid: e7d502dc-1137-4e1d-90aa-7a5c08ad9296
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: vKz8TGqy8gwbYChqBqMQ82k-vykP9tXxt4pVJQzMR40
+id: media.slide
+label: Slide
+targetEntityType: media
+cache: true

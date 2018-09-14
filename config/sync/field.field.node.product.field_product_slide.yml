@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_product_slide
     - node.type.product
-    - paragraphs.paragraphs_type.slideshow_component
+    - paragraphs.paragraphs_type.component_slideshow
   module:
     - entity_reference_revisions
 id: node.product.field_product_slide
@@ -23,7 +23,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      slideshow_component: slideshow_component
+      component_slideshow: component_slideshow
     target_bundles_drag_drop:
       component_hero:
         weight: 5
@@ -31,10 +31,13 @@ settings:
       component_hero_text:
         weight: 6
         enabled: false
-      slideshow_component:
+      component_slideshow:
         enabled: true
-        weight: 7
-      slideshow_slide:
         weight: 8
+      component_slideshow_slide:
+        weight: 9
+        enabled: false
+      component_title:
+        weight: 10
         enabled: false
 field_type: entity_reference_revisions

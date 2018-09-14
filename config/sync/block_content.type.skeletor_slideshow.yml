@@ -1,0 +1,10 @@
+uuid: 93765632-d594-49c6-a4a4-072f9e2b86ba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1yqzDsRaNpxWLxhpZBIcaAjrioWYEZXqL6EhGZ3xFGs
+id: skeletor_slideshow
+label: Slideshow
+revision: 0
+description: 'Create slideshow block using Skeletor slideshow component.'

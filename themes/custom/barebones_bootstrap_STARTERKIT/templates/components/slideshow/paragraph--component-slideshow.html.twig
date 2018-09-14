@@ -44,8 +44,9 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'component',
-    'component--slideshow',
+    'jumbotron-fluid',
+    'full-width',
+    'slideshow',
   ]
 %}
 {% block paragraph %}

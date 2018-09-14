@@ -1,19 +1,22 @@
-uuid: d978dbed-7542-49bb-a8a5-e72e93932b15
+uuid: d286b6ac-740c-423d-bb53-2639026ec346
 langcode: en
 status: true
 dependencies:
   module:
+    - block_content
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_slideshow_slide
-field_name: field_slideshow_slide
-entity_type: paragraph
+_core:
+  default_config_hash: bd6Xdoa-25VY0TrvMawkyse4wHVCUJq4yN8xsTK4TxI
+id: block_content.field_component_slideshow
+field_name: field_component_slideshow
+entity_type: block_content
 type: entity_reference_revisions
 settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

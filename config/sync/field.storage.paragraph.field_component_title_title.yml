@@ -1,15 +1,17 @@
-uuid: 66ac09ac-f813-4858-8ef9-20f00639601e
+uuid: a72d0f62-6cf2-4bfc-b47d-95be20990adb
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_slide_title
-field_name: field_slide_title
+_core:
+  default_config_hash: BUPYNm1QY-JnjxQAMscs1vna0Jxm4aD791C9Qe-KCOg
+id: paragraph.field_component_title_title
+field_name: field_component_title_title
 entity_type: paragraph
 type: string
 settings:
-  max_length: 64
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

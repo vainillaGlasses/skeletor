@@ -1,12 +1,14 @@
-uuid: 14bed49a-2295-4664-bfd8-2bce3be72e66
+uuid: 75695c54-1774-49d1-acec-5f5106a07631
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
-id: paragraph.field_slide_image
-field_name: field_slide_image
+_core:
+  default_config_hash: NOenPTUQBpN_CA7BACDM14oon3T1xIOGu9un24K-4Cg
+id: paragraph.field_component_slide_media
+field_name: field_component_slide_media
 entity_type: paragraph
 type: entity_reference
 settings:

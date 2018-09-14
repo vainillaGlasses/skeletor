@@ -1,0 +1,34 @@
+uuid: aab4b670-ef53-4aa5-8ba9-a6ddbea54c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_title.field_component_title_divider
+    - field.field.paragraph.component_title.field_component_title_subtitle
+    - field.field.paragraph.component_title.field_component_title_title
+    - paragraphs.paragraphs_type.component_title
+_core:
+  default_config_hash: 8hUmv4zjNhH5vU8-WH_xRU-K2Bl_zmUx5UhJI2CS8ls
+id: paragraph.component_title.default
+targetEntityType: paragraph
+bundle: component_title
+mode: default
+content:
+  field_component_title_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_component_title_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_component_title_divider: true

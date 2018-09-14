@@ -1,0 +1,11 @@
+uuid: aff622fc-d916-427d-b98a-0d10c8ab3e87
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z0hAbghvY9d7jyxLi8G6if9lMuUS4mR7IdRC09G4h6g
+id: component_slideshow_slide
+label: 'Slideshow Slide'
+icon_uuid: null
+description: 'Individual slide for Skeletor slideshow component'
+behavior_plugins: {  }
