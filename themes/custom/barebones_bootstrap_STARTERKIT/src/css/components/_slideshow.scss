@@ -1,9 +1,9 @@
 // Styles for Skeletor slideshow component.
 // -----------------------------------------------------------------------------
 
-.carousel-item img {
+.carousel__slide {
+  margin: 0 auto;
   height: auto;
-  max-width: 100%;
-  page-break-inside: avoid;
-  position: absolute;
+  max-width: 1920px;
+  overflow: hidden;
 }
