@@ -46,14 +46,14 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'component',
     'component--slideshow',
-    'full-width',
+    'full-width', 
     'slideshow',
   ]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="carousel__slide">
-      {{ content.field_component_slideshow_slides	}}
+    <div class="slideshow__media">
+      {{ content.field_component_slideshow_slides }}
     </div>
   </div>
 {% endblock paragraph %}

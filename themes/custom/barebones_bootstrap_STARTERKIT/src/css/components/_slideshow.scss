@@ -1,9 +1,48 @@
 // Styles for Skeletor slideshow component.
 // -----------------------------------------------------------------------------
-
-.carousel__slide {
+// .slideshow__media{
+//   height: auto;
+//   width: 100%;
+//   page-break-inside: avoid;
+//   position: absolute;
+// }
+.slideshow img{
+  background-color: red;
+  color: $bb-extra-light;
+  font-weight: 300;
+  max-height: 40rem;
+  position: relative;
+  
+  &::before {
+    background-color: rgba(red, .2);
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+.slideshow__media {
   margin: 0 auto;
-  height: auto;
   max-width: 1920px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.slideshow__inner {
+  bottom: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.slideshow__inner h5 {
+  margin-bottom: 1rem;
+  font-size: 4.25rem;
+}
+.slideshow__inner p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }

@@ -3,7 +3,7 @@
   color: $bb-extra-light;
   font-weight: 300;
   max-height: 40rem;
-  position: relative;
+  position: absolute;
 
   &::before {
     @include gradient-y(rgba($bb-blue-mid, 1), rgba($bb-blue-mid, .27));

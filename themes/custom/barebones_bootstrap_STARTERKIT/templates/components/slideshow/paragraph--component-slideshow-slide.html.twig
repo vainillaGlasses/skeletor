@@ -1,1 +1,35 @@
-{% extends '@barebones_bootstrap_STARTERKIT/patterns/paragraph-reset.html.twig' %}
+{# {% extends '@barebones_bootstrap_STARTERKIT/patterns/paragraph-reset.html.twig' %} #}
+
+{%
+ set classes = [
+   'paragraph',
+   'paragraph--type--' ~ paragraph.bundle|clean_class,
+   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+   not paragraph.isPublished() ? 'paragraph--unpublished',
+   'component',
+   'component--slideshow-slide',
+   'slideshow',
+ ]
+%}
+{% block paragraph %}
+ <section{{ attributes.addClass(classes) }}>
+    <div>
+        {% block content %}
+            {{ content.field_component_slide_media }}
+        {% endblock %}
+    </div>
+ </section>
+{% endblock paragraph %}
+
+{# {% block paragraph %}
+ <section{{ attributes.addClass(classes) }}>
+    <div>
+        {{ content.field_component_slide_media }}
+    </div>    
+    <div class="slideshow__inner">    
+        {{ content.field_component_slide_text }}
+        {{ content.field_component_slide_link }}
+        {{ content.field_component_slide_title }}
+    </div>
+ </section>
+{% endblock paragraph %} #}
