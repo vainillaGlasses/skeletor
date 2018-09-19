@@ -11,8 +11,12 @@
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
+    'component',
+    'component--slideshow',
+    'full-width',
+    'slideshow',
   ]
 %}
 {% for item in items %}
-  <p{{ attributes.addClass(classes) }}>{{ item.content }}</p>
+  <p class='myText' {{ attributes.addClass(classes) }}>{{ item.content }}</p>
 {% endfor %}

@@ -1,16 +1,11 @@
 // Styles for Skeletor slideshow component.
 // -----------------------------------------------------------------------------
-// .slideshow__media{
-//   height: auto;
-//   width: 100%;
-//   page-break-inside: avoid;
-//   position: absolute;
-// }
+
 .slideshow img{
-  background-color: red;
   color: $bb-extra-light;
   font-weight: 300;
-  max-height: 40rem;
+  max-height: 600px;
+  width: 100%;
   position: relative;
   
   &::before {
@@ -41,8 +36,20 @@
 .slideshow__inner h5 {
   margin-bottom: 1rem;
   font-size: 4.25rem;
+  font-family: $roboto;
 }
 .slideshow__inner p {
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-family: $mono;
+}
+
+.myTitle{
+  font-family: $roboto;
+  font-size: xx-large;
+  margin-bottom: 300px;
+}
+
+.myText {
+  font-family: $mono;
 }

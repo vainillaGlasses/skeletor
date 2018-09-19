@@ -15,21 +15,8 @@
  <section{{ attributes.addClass(classes) }}>
     <div>
         {% block content %}
-            {{ content.field_component_slide_media }}
+            {{ content }}
         {% endblock %}
     </div>
  </section>
 {% endblock paragraph %}
-
-{# {% block paragraph %}
- <section{{ attributes.addClass(classes) }}>
-    <div>
-        {{ content.field_component_slide_media }}
-    </div>    
-    <div class="slideshow__inner">    
-        {{ content.field_component_slide_text }}
-        {{ content.field_component_slide_link }}
-        {{ content.field_component_slide_title }}
-    </div>
- </section>
-{% endblock paragraph %} #}
