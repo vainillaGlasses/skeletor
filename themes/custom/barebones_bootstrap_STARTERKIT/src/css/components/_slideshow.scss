@@ -7,6 +7,9 @@
   max-height: 600px;
   width: 100%;
   position: relative;
+  
+  -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+  filter: sepia(100%);
 }
 
 .carousel-inner div {
@@ -31,30 +34,3 @@
   width: 50px;
   height: 50px;
 }
-
-/*
-.slideshow__media {
-  margin: 0 auto;
-  max-width: 1920px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-.slideshow__inner {
-  bottom: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.slideshow__inner h5 {
-  margin-bottom: 1rem;
-  font-size: 4.25rem;
-  font-family: $roboto;
-}
-.slideshow__inner p {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-family: $mono;
-}
-*/
