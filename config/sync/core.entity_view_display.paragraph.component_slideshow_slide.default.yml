@@ -6,15 +6,18 @@ dependencies:
     - field.field.paragraph.component_slideshow_slide.field_component_slide_media
     - field.field.paragraph.component_slideshow_slide.field_component_slide_text
     - field.field.paragraph.component_slideshow_slide.field_component_slide_title
+    - field.field.paragraph.component_slideshow_slide.field_slide_link
     - paragraphs.paragraphs_type.component_slideshow_slide
   module:
     - field_group
+    - link
 third_party_settings:
   field_group:
     group_component_slide_caption:
       children:
         - field_component_slide_title
         - field_component_slide_text
+        - field_slide_link
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -60,5 +63,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_slide_link:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
     region: content
 hidden: {  }
