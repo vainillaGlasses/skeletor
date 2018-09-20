@@ -5,18 +5,16 @@
  *
  */
 #}
+
 {%
   set classes = [
     'field',
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
-    'component',
-    'component--slideshow',
-    'full-width',
-    'slideshow',
+    'buttons',
   ]
 %}
 {% for item in items %}
-  <p  {{ attributes.addClass(classes) }}>{{ item.content }}</p>
+  {{ item.content|merge({'#options': {'attributes': {'class': ['slideshow_botton']}}}) }}
 {% endfor %}
