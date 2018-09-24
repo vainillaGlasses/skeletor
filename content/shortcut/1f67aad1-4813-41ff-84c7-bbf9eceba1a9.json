@@ -1,0 +1,55 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/admin\/config\/user-interface\/shortcut\/link\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/shortcut\/default"
+        }
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1f67aad1-4813-41ff-84c7-bbf9eceba1a9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "shortcut_set": [
+        {
+            "target_id": "default"
+        }
+    ],
+    "title": [
+        {
+            "value": "Add content",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": -20
+        }
+    ],
+    "link": [
+        {
+            "uri": "internal:\/node\/add",
+            "title": null,
+            "options": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

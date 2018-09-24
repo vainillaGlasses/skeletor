@@ -1,0 +1,162 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/component_slideshow_slide"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/field_component_slide_media": [
+            {
+                "href": "http:\/\/default\/media\/6?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4f30cb61-d329-4634-8066-397c50f4d1de"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 36
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "component_slideshow_slide"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8830f165-23f4-43ad-846b-4a7959c18b2d"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8830f165-23f4-43ad-846b-4a7959c18b2d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/component_slideshow_slide\/field_component_slide_media": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b9531a99-b8bf-4110-a38c-e6f438e21518"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-14T20:47:36+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "10"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_component_slideshow_slides"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": "a:0:{}"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_component_slide_text": [
+        {
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu tellus, tincidunt sollicitudin urna ut, laoreet tempus velit. Aliquam semper, felis sit amet volutpat viverra, turpis ex tristique neque, sit amet iaculis massa dui nec urna."
+        }
+    ],
+    "field_component_slide_title": [
+        {
+            "value": "Amet iAculis mAssA"
+        }
+    ],
+    "field_slide_link": [
+        {
+            "uri": "http:\/\/lorempixel.com\/800\/400\/animals\/",
+            "title": "Go on!",
+            "options": []
+        }
+    ]
+}

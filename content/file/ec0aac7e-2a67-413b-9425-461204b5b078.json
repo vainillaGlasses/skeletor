@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2018-09\/book4.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ec0aac7e-2a67-413b-9425-461204b5b078"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8830f165-23f4-43ad-846b-4a7959c18b2d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "book4.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2018-09\/book4.jpg",
+            "url": "\/sites\/default\/files\/2018-09\/book4.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 293796
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-14T16:47:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-14T16:47:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

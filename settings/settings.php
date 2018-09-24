@@ -27,6 +27,11 @@ ini_set('session.gc_maxlifetime', 200000);
 ini_set('session.cookie_lifetime', 2000000);
 
 /**
+* relative path for default_content_deploy
+**/
+$config['content_directory'] = '../content';
+
+/**
  * Include local configuration.
  *
  * IMPORTANT: This block should remain at the bottom of this file.

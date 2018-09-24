@@ -13,17 +13,13 @@ bundle: frequently_asked_questions
 mode: default
 content:
   field_faq_answer:
-    weight: 101
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
+  links: true

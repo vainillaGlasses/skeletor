@@ -22,3 +22,10 @@ function faq_module_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+
+function faq_module_theme(){
+}

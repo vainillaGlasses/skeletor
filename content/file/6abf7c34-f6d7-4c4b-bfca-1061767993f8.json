@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2018-09\/be4.jpeg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6abf7c34-f6d7-4c4b-bfca-1061767993f8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8830f165-23f4-43ad-846b-4a7959c18b2d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "be4.jpeg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2018-09\/be4.jpeg",
+            "url": "\/sites\/default\/files\/2018-09\/be4.jpeg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 5038
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-14T20:16:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-14T20:16:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

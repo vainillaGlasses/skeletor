@@ -1,0 +1,106 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/crop\/focal_point"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/crop\/focal_point\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "cid": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b3d40a2b-15df-422f-bde1-49c4017446bf"
+        }
+    ],
+    "vid": [
+        {
+            "value": 6
+        }
+    ],
+    "type": [
+        {
+            "target_id": "focal_point"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "entity_id": [
+        {
+            "value": 6
+        }
+    ],
+    "entity_type": [
+        {
+            "value": "file"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2018-09\/be1.jpg",
+            "lang": "en"
+        }
+    ],
+    "x": [
+        {
+            "value": 900,
+            "lang": "en"
+        }
+    ],
+    "y": [
+        {
+            "value": 350,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2018-09-14T20:15:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/crop\/focal_point\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8830f165-23f4-43ad-846b-4a7959c18b2d"
+                    }
+                ]
+            }
+        ]
+    },
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}
