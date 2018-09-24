@@ -1,0 +1,21 @@
+uuid: 59337864-187a-453d-a0b1-71b2cfd09066
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.frequently_asked_questions
+  module:
+    - user
+id: node.frequently_asked_questions.teaser
+targetEntityType: node
+bundle: frequently_asked_questions
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
