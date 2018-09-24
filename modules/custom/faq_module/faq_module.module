@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains faq_module.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function faq_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the faq_module module.
+    case 'help.page.faq_module':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module por items accordion theme hook') . '</p>';
+      return $output;
+
+    default:
+  }
+}
