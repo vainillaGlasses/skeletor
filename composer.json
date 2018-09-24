@@ -20,7 +20,8 @@
     "drupal/core": "8.6.1",
     "myplanet/skeletor": "8.2.x-dev",
     "drupal/admin_toolbar": "^1.24",
-    "drupal/devel": "^1.2"
+    "drupal/devel": "^1.2",
+    "drupal/default_content_deploy": "^1.0@alpha"
   },
   "require-dev": {
     "TestDrupal/BehatExtension": "dev-update",

@@ -13,6 +13,8 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  default_content: 0
+  default_content_deploy: 0
   devel: 0
   devel_generate: 0
   dropzonejs: 0
@@ -27,6 +29,7 @@ module:
   file: 0
   filter: 0
   focal_point: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
@@ -45,6 +48,7 @@ module:
   responsive_image: 0
   robotstxt: 0
   search: 0
+  serialization: 0
   shortcut: 0
   skeletor_hero: 0
   skeletor_media: 0
