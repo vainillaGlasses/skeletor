@@ -28,84 +28,11 @@ function faq_module_help($route_name, RouteMatchInterface $route_match) {
  */
 
 function faq_module_theme(){
-
-    /*
-    stdClass Object
-    (
-        [__CLASS__] => Drupal\block\Entity\Block
-        [id:protected] => pagetitle
-        [settings:protected] => Array
-            (
-                [id] => page_title_block
-                [label] => Page title
-                [provider] => core
-                [label_display] => 0
-            )
-
-        [region:protected] => content
-        [weight:protected] => -4
-        [plugin:protected] => page_title_block
-        [visibility:protected] => Array
-            (
-            )
-
-        [pluginCollection:protected] =>
-        [contexts:protected] => Array
-            (
-            )
-
-        [visibilityCollection:protected] =>
-        [conditionPluginManager:protected] =>
-        [theme:protected] => barebones_bootstrap_STARTERKIT
-        [originalId:protected] => pagetitle
-        [status:protected] => 1
-        [uuid:protected] => d440c690-b1ab-43cd-b076-cf73dcbe8ad3
-        [isSyncing:Drupal\Core\Config\Entity\ConfigEntityBase:private] =>
-        [isUninstalling:Drupal\Core\Config\Entity\ConfigEntityBase:private] =>
-        [langcode:protected] => en
-        [third_party_settings:protected] => Array
-            (
-            )
-
-        [_core:protected] => Array
-            (
-                [default_config_hash] => xnXu5Go3MDQpJmQU7IQ3ID87yykF1vjxcRm3EbjapcQ
-            )
-
-        [trustedData:protected] =>
-        [entityTypeId:protected] => block
-        [enforceIsNew:protected] =>
-        [typedData:protected] =>
-        [cacheContexts:protected] => Array
-            (
-                [0] => languages:language_interface
-            )
-
-        [cacheTags:protected] => Array
-            (
-            )
-
-        [cacheMaxAge:protected] => -1
-        [_serviceIds:protected] => Array
-            (
-            )
-
-        [_entityStorages:protected] => Array
-            (
-            )
-
-        [dependencies:protected] => Array
-            (
-                [theme] => Array
-                    (
-                        [0] => barebones_bootstrap_STARTERKIT
-                    )
-
-            )
-
-        [provider] =>
-    )
-    */
-
-
+  return [
+      'items_accordion' => [
+        'variables' => [
+          'items' => [],
+        ]
+      ]
+    ];
 }

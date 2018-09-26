@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Created using service: entity.query service
+ * Created using service: entity_type.manager
  */
 
 namespace Drupal\faq_module\Plugin\Block;
@@ -9,26 +9,26 @@ namespace Drupal\faq_module\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Entity\EntityTypeManager;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 
 /**
- * Provides a 'FAQ Accordion' block.
+ * Provides a 'DefaultBlock' block.
  *
  * @Block(
- *  id = "faq_accordion",
- *  admin_label = @Translation("Faq accordion"),
+ *  id = "default_block",
+ *  admin_label = @Translation("Default block"),
  * )
  */
-class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface {
+class DefaultBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
   /**
-   * Symfony\Component\DependencyInjection\ContainerAwareInterface definition.
+   * Drupal\Core\Entity\EntityTypeManagerInterface definition.
    *
-   * @var Drupal\Core\Entity\EntityTypeManager
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
   protected $entityTypeManager;
   /**
-   * Constructs a new FAQ Accordion object.
+   * Constructs a new DefaultBlock object.
    *
    * @param array $configuration
    *   A configuration array containing information about the plugin instance.
@@ -41,7 +41,7 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
     array $configuration,
     $plugin_id,
     $plugin_definition,
-    EntityTypeManager $entity_type_manager
+    EntityTypeManagerInterface $entity_type_manager
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
@@ -62,7 +62,7 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
    */
   public function build() {
     $build = [];
-    $build['faq_accordion']['#markup'] = 'Implement FAQ Accordion using service: entity.query service.';
+    $build['default_block']['#markup'] = 'Implement DefaultBlock using service: entity_type.manager.';
 
     $items = [];
 
@@ -73,12 +73,12 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
    */
 
    //Modified Code
-   $query = $this->entityTypeManager->getStorage('node')->getQuery()
-   ->condition('type', 'frequently_asked_questions');
+    $query = $this->entityTypeManager->getStorage('node')->getQuery()
+        ->condition('type', 'frequently_asked_questions');
 
-  /**
-  * Modified Code Reference:https://www.drupal.org/node/2849874
-  */
+    /**
+     * Modified Code Reference:https://www.drupal.org/node/2849874
+     */
 
     $nids = $query->execute();
 
@@ -89,16 +89,14 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
         'title' => $node->label(),
         'description' => $node->field_faq_question->value,
       ];
-
       $items[] = $item;
     }
 
-    $build['items'][] = [
-      '#theme' => 'items_accordion',
-      '#items' => $items,
-    ];
+      $build['items'][] = [
+        '#theme' => 'items_accordion',
+        '#items' => $items,
+      ];
 
     return $build;
   }
-
 }
