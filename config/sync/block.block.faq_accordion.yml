@@ -1,0 +1,28 @@
+uuid: e1c8edd5-86f2-4301-84df-877883f3fe1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - faq_module
+  theme:
+    - barebones_bootstrap_STARTERKIT
+id: faq_accordion
+theme: barebones_bootstrap_STARTERKIT
+region: content
+weight: 0
+provider: null
+plugin: faq_accordion
+settings:
+  id: faq_accordion
+  label: Faq_accordion
+  provider: faq_module
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frequently_asked_questions: frequently_asked_questions
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

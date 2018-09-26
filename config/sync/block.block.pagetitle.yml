@@ -9,7 +9,7 @@ _core:
 id: pagetitle
 theme: barebones_bootstrap_STARTERKIT
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
