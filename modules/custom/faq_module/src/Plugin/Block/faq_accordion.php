@@ -22,6 +22,7 @@ class faq_accordion extends BlockBase {
     $build['faq_accordion']['#markup'] = 'Implement faq_accordion.';
 
     return $build;
+    
   }
 
 }
