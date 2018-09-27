@@ -1,11 +1,11 @@
 uuid: 6ce11a87-7d1d-4a6f-800d-e6a8300e1da7
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: dev
 label: dev
 description: ''
-folder: ''
+folder: sites/default/config/dev
 module:
   devel: 0
 theme: {  }
