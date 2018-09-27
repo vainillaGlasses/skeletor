@@ -44,3 +44,51 @@ if (file_exists(DRUPAL_ROOT . '/sites/default/settings.pantheon.php')) {
 }
 $settings['install_profile'] = 'skeletor';
 $config_directories['sync'] = 'sites/default/config/sync';
+
+
+/*
+
+    Split Settings
+
+*/
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'live':
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#FF0100';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Live';
+      break;
+    case 'test':
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#F39500';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Test';
+      break;
+    case 'dev':
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#0FC37B';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Development';
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      break;
+
+// not in example 
+    case 'local':
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['fg_color'] = '#000000';
+      $config['environment_indicator.indicator']['name'] = 'Local';
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = TRUE;
+      break;
+  }
+}
+else {
+  $config['config_split.config_split.config_dev']['status'] = TRUE;
+}
