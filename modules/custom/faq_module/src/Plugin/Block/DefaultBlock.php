@@ -87,7 +87,7 @@ class DefaultBlock extends BlockBase implements ContainerFactoryPluginInterface 
     foreach ($nodes as $node) {
       $item = [
         'title' => $node->label(),
-        'description' => $node->field_faq_question->value,
+        'description' => $node->field_faq_answer->value,
       ];
       $items[] = $item;
     }

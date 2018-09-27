@@ -87,7 +87,7 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
     foreach ($nodes as $node) {
       $item = [
         'title' => $node->label(),
-        'description' => $node->field_faq_question->value,
+        'description' => $node->field_faq_answer->value,
       ];
 
       $items[] = $item;
@@ -100,5 +100,4 @@ class faq_accordion extends BlockBase implements ContainerFactoryPluginInterface
 
     return $build;
   }
-
 }
