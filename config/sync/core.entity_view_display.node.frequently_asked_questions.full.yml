@@ -1,23 +1,26 @@
-uuid: 59337864-187a-453d-a0b1-71b2cfd09066
+uuid: 55a47ead-8827-45fc-a9a3-a30f6cbf67a7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.full
     - field.field.node.frequently_asked_questions.field_faq_answer
     - node.type.frequently_asked_questions
   module:
     - user
-id: node.frequently_asked_questions.teaser
+id: node.frequently_asked_questions.full
 targetEntityType: node
 bundle: frequently_asked_questions
-mode: teaser
+mode: full
 content:
-  links:
-    weight: 100
-    settings: {  }
+  field_faq_answer:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
     region: content
 hidden:
-  field_faq_answer: true
   langcode: true
+  links: true

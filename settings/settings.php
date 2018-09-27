@@ -44,3 +44,30 @@ if (file_exists(DRUPAL_ROOT . '/sites/default/settings.pantheon.php')) {
 }
 $settings['install_profile'] = 'skeletor';
 $config_directories['sync'] = 'sites/default/config/sync';
+
+
+/*
+
+    Split Settings
+
+*/
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'live':
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      
+      break;
+    case 'test':
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      
+    case 'dev':
+      // Config Split.
+      $config['config_split.config_split.dev']['status'] = TRUE;
+      break;
+  }
+}
+else {
+  $config['config_split.config_split.config_dev']['status'] = TRUE;
+}

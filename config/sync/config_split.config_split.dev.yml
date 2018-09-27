@@ -5,7 +5,7 @@ dependencies: {  }
 id: dev
 label: dev
 description: ''
-folder: ''
+folder: sites/default/config/dev
 module:
   devel: 0
 theme: {  }
