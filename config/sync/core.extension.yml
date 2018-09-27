@@ -17,6 +17,8 @@ module:
   dblog: 0
   default_content: 0
   default_content_deploy: 0
+  devel: 0
+  devel_generate: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   editor: 0
@@ -33,6 +35,7 @@ module:
   hal: 0
   help: 0
   history: 0
+  hook_event_dispatcher: 0
   image: 0
   inline_entity_form: 0
   language: 0

@@ -1,0 +1,20 @@
+uuid: 4f110a33-2469-4683-89e3-7d7b98bc9b91
+langcode: en
+status: true
+dependencies:
+  module:
+    - faq_module
+  theme:
+    - barebones_bootstrap_STARTERKIT
+id: faqblock
+theme: barebones_bootstrap_STARTERKIT
+region: content
+weight: 0
+provider: null
+plugin: faq_block
+settings:
+  id: faq_block
+  label: 'Faq block'
+  provider: faq_module
+  label_display: visible
+visibility: {  }
