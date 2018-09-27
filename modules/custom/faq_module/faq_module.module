@@ -16,23 +16,19 @@ function faq_module_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.faq_module':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Module por items accordion theme hook') . '</p>';
+      $output .= '<p>' . t('FAQ module for accordion') . '</p>';
       return $output;
 
     default:
   }
 }
 
-/**
- * Implements hook_theme().
- */
-
-function faq_module_theme(){
+function faq_module_theme($existing, $type, $theme, $path) {
   return [
-      'items_accordion' => [
-        'variables' => [
-          'items' => [],
-        ]
+    'items_accordion' => [
+      'variables' => [
+        'items' => [],
       ]
-    ];
+    ]
+  ];
 }

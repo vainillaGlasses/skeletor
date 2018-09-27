@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Created using service: entity_type.manager
- */
-
 namespace Drupal\faq_module\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -12,15 +8,14 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 
 /**
- * Provides a 'DefaultBlock' block.
+ * Provides a 'FaqBlock' block.
  *
  * @Block(
- *  id = "default_block",
- *  admin_label = @Translation("Default block"),
+ *  id = "faq_block",
+ *  admin_label = @Translation("Faq block"),
  * )
  */
-class DefaultBlock extends BlockBase implements ContainerFactoryPluginInterface {
-
+class FaqBlock extends BlockBase implements ContainerFactoryPluginInterface {
   /**
    * Drupal\Core\Entity\EntityTypeManagerInterface definition.
    *
@@ -63,27 +58,21 @@ class DefaultBlock extends BlockBase implements ContainerFactoryPluginInterface 
   public function build() {
     $build = [];
     $build['default_block']['#markup'] = 'Implement DefaultBlock using service: entity_type.manager.';
-
     $items = [];
-
   /**
    * original code from source: https://www.sitepoint.com/drupal-8-version-entityfieldquery/
-   * $query = \Drupal::entityQuery('node')
+   * $query = \Drupal::entityQuery('node') 
    * ->condition('status', 1);
    */
-
    //Modified Code
     $query = $this->entityTypeManager->getStorage('node')->getQuery()
-        ->condition('type', 'frequently_asked_questions');
-
+        ->condition('type', 'frequently_asked_questions'); 
     /**
      * Modified Code Reference:https://www.drupal.org/node/2849874
      */
-
+        
     $nids = $query->execute();
-
     $nodes = entity_load_multiple('node', $nids);
-
     foreach ($nodes as $node) {
       $item = [
         'title' => $node->label(),
@@ -91,12 +80,11 @@ class DefaultBlock extends BlockBase implements ContainerFactoryPluginInterface 
       ];
       $items[] = $item;
     }
-
       $build['items'][] = [
         '#theme' => 'items_accordion',
         '#items' => $items,
       ];
-
+    
     return $build;
   }
 }

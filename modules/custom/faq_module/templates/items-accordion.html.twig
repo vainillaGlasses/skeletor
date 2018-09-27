@@ -1,15 +1,11 @@
 {%
   set classes = [
-    'field',
-    'field--name-' ~ field_name|clean_class,
-    'field--type-' ~ field_type|clean_class,
-    'field--label-' ~ label_display,
+
   ]
 %}
 
-
-
-{% for item in items %}
+{# {% for item in items %} #}
+{% for key, item in items %}
 
 <div id="accordion">
     <div class="card">
@@ -26,10 +22,9 @@
         {# <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"> #}
         <div id="{{'collapse' ~ key}}" class="collapse" aria-labelledby="{{'heading' ~ key}}" data-parent="#accordion">
             <div class="card-body">
-                 {{ item.field_faq_answer}}
+                 {{ item.description}}
             </div>
         </div>
     </div>
 </div>
-
 {% endfor %}

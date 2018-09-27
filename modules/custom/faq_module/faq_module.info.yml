@@ -1,5 +1,5 @@
 name: 'FAQ Module'
 type: module
-description: 'Module por items accordion theme hook'
+description: 'FAQ module for accordion'
 core: 8.x
 package: 'Custom'
