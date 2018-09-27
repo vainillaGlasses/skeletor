@@ -66,6 +66,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
       // Config Split.
       $config['config_split.config_split.dev']['status'] = FALSE;
       break;
+  }
 }
 else {
   $config['config_split.config_split.config_dev']['status'] = TRUE;
