@@ -13,6 +13,7 @@ module:
   contextual: 0
   crop: 0
   ctools: 0
+  custom_events: 0
   datetime: 0
   dblog: 0
   default_content: 0
@@ -58,6 +59,7 @@ module:
   skeletor_media: 0
   skeletor_slideshow: 0
   skeletor_title_component: 0
+  statistics: 0
   svg_image: 0
   system: 0
   taxonomy: 0
