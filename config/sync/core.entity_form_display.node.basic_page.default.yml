@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.basic_page.field_accordion_component
+    - field.field.node.basic_page.field_component_accordion
     - node.type.basic_page
   module:
     - paragraphs
@@ -19,7 +19,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_accordion_component:
+  field_component_accordion:
     type: entity_reference_paragraphs
     weight: 121
     settings:

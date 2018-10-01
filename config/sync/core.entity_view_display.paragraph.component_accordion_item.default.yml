@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.component_accordion_item.field_accordion_item_content
-    - field.field.paragraph.component_accordion_item.field_accordion_item_title
+    - field.field.paragraph.component_accordion_item.field_aic_image
+    - field.field.paragraph.component_accordion_item.field_aic_link
+    - field.field.paragraph.component_accordion_item.field_aic_text
+    - field.field.paragraph.component_accordion_item.field_aic_title
     - paragraphs.paragraphs_type.component_accordion_item
   module:
-    - entity_reference_revisions
+    - link
 _core:
   default_config_hash: oVS7mv8lz5A0UkgOebw30xHZH1uUkrnjfdDwNp7vhuE
 id: paragraph.component_accordion_item.default
@@ -15,14 +17,40 @@ targetEntityType: paragraph
 bundle: component_accordion_item
 mode: default
 content:
-  field_accordion_item_content:
-    type: entity_reference_revisions_entity_view
-    weight: 0
+  field_aic_image:
+    type: entity_reference_entity_view
+    weight: 4
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      view_mode: card
+      link: false
     third_party_settings: {  }
     region: content
-hidden:
-  field_accordion_item_title: true
+  field_aic_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_aic_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_aic_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

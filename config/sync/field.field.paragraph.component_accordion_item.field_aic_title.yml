@@ -1,19 +1,17 @@
-uuid: 3723ada9-62f2-4c49-bde1-0e166a72ed06
+uuid: c66ddc9f-bafc-41e3-b591-2796a2d5a32e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_accordion_item_title
+    - field.storage.paragraph.field_aic_title
     - paragraphs.paragraphs_type.component_accordion_item
-_core:
-  default_config_hash: 9RKms65_5VC0c1MKN78fHti9V0GYBHIznC5KR0E9ulg
-id: paragraph.component_accordion_item.field_accordion_item_title
-field_name: field_accordion_item_title
+id: paragraph.component_accordion_item.field_aic_title
+field_name: field_aic_title
 entity_type: paragraph
 bundle: component_accordion_item
 label: Title
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

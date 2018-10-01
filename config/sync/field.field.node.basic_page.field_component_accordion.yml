@@ -1,14 +1,14 @@
-uuid: a42c7b8c-95e7-49c3-8aa4-8eb4b0990306
+uuid: 5e701ca2-442e-472b-85a0-cbb288e918e2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_accordion_component
+    - field.storage.node.field_component_accordion
     - node.type.basic_page
   module:
     - entity_reference_revisions
-id: node.basic_page.field_accordion_component
-field_name: field_accordion_component
+id: node.basic_page.field_component_accordion
+field_name: field_component_accordion
 entity_type: node
 bundle: basic_page
 label: 'Accordion Component'
@@ -21,27 +21,30 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: {  }
+    target_bundles: null
     target_bundles_drag_drop:
-      accordion_component_cards:
-        enabled: true
-        weight: 8
-      component_accordion_item_cards:
+      component_accordion:
         weight: 9
         enabled: false
-      component_hero:
+      component_accordion_item:
         weight: 10
         enabled: false
-      component_hero_text:
+      component_accordion_item_content:
         weight: 11
         enabled: false
-      component_slideshow:
+      component_hero:
         weight: 12
         enabled: false
-      component_slideshow_slide:
+      component_hero_text:
         weight: 13
         enabled: false
-      component_title:
+      component_slideshow:
         weight: 14
+        enabled: false
+      component_slideshow_slide:
+        weight: 15
+        enabled: false
+      component_title:
+        weight: 16
         enabled: false
 field_type: entity_reference_revisions

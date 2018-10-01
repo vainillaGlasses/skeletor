@@ -1,0 +1,23 @@
+uuid: 7318be0e-a746-4196-a8a0-a80402c01edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aic_link
+    - paragraphs.paragraphs_type.component_accordion_item
+  module:
+    - link
+id: paragraph.component_accordion_item.field_aic_link
+field_name: field_aic_link
+entity_type: paragraph
+bundle: component_accordion_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

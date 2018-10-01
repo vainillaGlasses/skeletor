@@ -1,18 +1,14 @@
-uuid: 5da7c87c-fa80-44a8-9c1a-66e716b91a2a
+uuid: 56e47559-0ce8-49cd-b956-c588340730e1
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-_core:
-  default_config_hash: gL67RRqlYJ8jlSU4MnlqmCSkOOiRPbYhjIU3ZY31zzY
-id: paragraph.field_accordion_item_title
-field_name: field_accordion_item_title
+id: paragraph.field_aic_text
+field_name: field_aic_text
 entity_type: paragraph
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
