@@ -1,0 +1,10 @@
+uuid: 3c5f44e7-a875-4b66-b231-2eeeea5e74eb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: T6Tkv7li5YoZbyoSI0lZJCE_hleM54QNhznSWFxX7Bo
+id: skeletor_accordion
+label: Accordion
+revision: 0
+description: 'Create accordion block using Skeletor accordion component.'

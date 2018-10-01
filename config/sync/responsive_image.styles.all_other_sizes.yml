@@ -1,0 +1,25 @@
+uuid: 6a086e6a-6fa9-488d-829d-16fd8e4a8267
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.card_lg
+    - image.style.card_lg_2x
+    - image.style.card_xs
+    - image.style.card_xs_2x
+id: all_other_sizes
+label: 'All other sizes'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - card_lg
+        - card_lg_2x
+        - card_xs
+        - card_xs_2x
+breakpoint_group: responsive_image
+fallback_image_style: card_lg

@@ -55,6 +55,7 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  skeletor_accordion: 0
   skeletor_hero: 0
   skeletor_media: 0
   skeletor_slideshow: 0

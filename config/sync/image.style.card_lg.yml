@@ -1,0 +1,15 @@
+uuid: 72498684-bc87-4ed5-9862-69220c4c1fad
+langcode: en
+status: true
+dependencies: {  }
+name: card_lg
+label: 'Card LG'
+effects:
+  29ced514-5c14-40a4-b6a7-f6826ec3f3c3:
+    uuid: 29ced514-5c14-40a4-b6a7-f6826ec3f3c3
+    id: image_scale
+    weight: 1
+    data:
+      width: 190
+      height: 140
+      upscale: false

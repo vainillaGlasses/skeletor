@@ -1,0 +1,47 @@
+uuid: a42c7b8c-95e7-49c3-8aa4-8eb4b0990306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accordion_component
+    - node.type.basic_page
+  module:
+    - entity_reference_revisions
+id: node.basic_page.field_accordion_component
+field_name: field_accordion_component
+entity_type: node
+bundle: basic_page
+label: 'Accordion Component'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      accordion_component_cards:
+        enabled: true
+        weight: 8
+      component_accordion_item_cards:
+        weight: 9
+        enabled: false
+      component_hero:
+        weight: 10
+        enabled: false
+      component_hero_text:
+        weight: 11
+        enabled: false
+      component_slideshow:
+        weight: 12
+        enabled: false
+      component_slideshow_slide:
+        weight: 13
+        enabled: false
+      component_title:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

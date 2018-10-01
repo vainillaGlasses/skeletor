@@ -1,0 +1,15 @@
+uuid: d92851e6-98a2-4d34-a4ce-62c1681e4c6a
+langcode: en
+status: true
+dependencies: {  }
+name: card_xs_2x
+label: 'Card XS @2x'
+effects:
+  eeeda98c-f9b4-48fa-8a02-f780e1a29a53:
+    uuid: eeeda98c-f9b4-48fa-8a02-f780e1a29a53
+    id: image_scale
+    weight: 1
+    data:
+      width: 240
+      height: 160
+      upscale: false

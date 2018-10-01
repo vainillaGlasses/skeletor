@@ -1,0 +1,15 @@
+uuid: 47951d78-7ba6-40c4-8d43-5aeed63bfa8c
+langcode: en
+status: true
+dependencies: {  }
+name: card_lg_2x
+label: 'Card LG @2x'
+effects:
+  1b27815b-6e1a-4cc6-a65d-e6ea0ccc1191:
+    uuid: 1b27815b-6e1a-4cc6-a65d-e6ea0ccc1191
+    id: image_scale
+    weight: 1
+    data:
+      width: 380
+      height: 280
+      upscale: false
