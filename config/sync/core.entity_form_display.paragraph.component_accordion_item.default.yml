@@ -3,14 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.component_accordion_item.field_aic_image
-    - field.field.paragraph.component_accordion_item.field_aic_link
-    - field.field.paragraph.component_accordion_item.field_aic_text
-    - field.field.paragraph.component_accordion_item.field_aic_title
+    - field.field.paragraph.component_accordion_item.field_accordio_item_content
+    - field.field.paragraph.component_accordion_item.field_accordion_item_cards
+    - field.field.paragraph.component_accordion_item.field_accordion_item_title
     - paragraphs.paragraphs_type.component_accordion_item
   module:
-    - entity_browser
-    - link
+    - paragraphs
 _core:
   default_config_hash: HXTocqgF0fmzENxKtPXG31E8TH31N3nRxeKnR3NmrnY
 id: paragraph.component_accordion_item.default
@@ -18,38 +16,32 @@ targetEntityType: paragraph
 bundle: component_accordion_item
 mode: default
 content:
-  field_aic_image:
-    weight: 4
+  field_accordio_item_content:
+    type: entity_reference_paragraphs
+    weight: 1
     settings:
-      entity_browser: null
-      open: false
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: false
-      field_widget_display_settings: {  }
-      selection_mode: selection_append
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
-  field_aic_link:
-    weight: 3
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_aic_text:
+  field_accordion_item_cards:
+    type: entity_reference_paragraphs
     weight: 2
     settings:
-      rows: 5
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: string_textarea
     region: content
-  field_aic_title:
-    weight: 1
+  field_accordion_item_title:
+    weight: 0
     settings:
       size: 60
       placeholder: ''

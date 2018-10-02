@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.basic_page.field_component_accordion
+    - field.field.node.basic_page.field_bp_accordion
     - node.type.basic_page
   module:
     - entity_reference_revisions
@@ -13,7 +13,7 @@ targetEntityType: node
 bundle: basic_page
 mode: default
 content:
-  field_component_accordion:
+  field_bp_accordion:
     type: entity_reference_revisions_entity_view
     weight: 101
     label: above
@@ -24,8 +24,8 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

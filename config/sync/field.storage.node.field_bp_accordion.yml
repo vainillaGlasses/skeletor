@@ -1,4 +1,4 @@
-uuid: 30419ead-d75e-408b-a7e3-da3e28d975a9
+uuid: 402b484f-01fb-46af-917b-29b2e920b7ce
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_component_accordion
-field_name: field_component_accordion
+id: node.field_bp_accordion
+field_name: field_bp_accordion
 entity_type: node
 type: entity_reference_revisions
 settings:

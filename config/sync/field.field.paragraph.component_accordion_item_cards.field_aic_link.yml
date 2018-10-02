@@ -1,16 +1,16 @@
-uuid: 7318be0e-a746-4196-a8a0-a80402c01edf
+uuid: a188185e-8478-49d1-b15c-f33c557975ae
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_aic_link
-    - paragraphs.paragraphs_type.component_accordion_item
+    - paragraphs.paragraphs_type.component_accordion_item_cards
   module:
     - link
-id: paragraph.component_accordion_item.field_aic_link
+id: paragraph.component_accordion_item_cards.field_aic_link
 field_name: field_aic_link
 entity_type: paragraph
-bundle: component_accordion_item
+bundle: component_accordion_item_cards
 label: Link
 description: ''
 required: false

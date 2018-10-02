@@ -1,14 +1,14 @@
-uuid: c66ddc9f-bafc-41e3-b591-2796a2d5a32e
+uuid: 5a5d1108-f303-4906-bdb5-441b95353847
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_aic_title
-    - paragraphs.paragraphs_type.component_accordion_item
-id: paragraph.component_accordion_item.field_aic_title
+    - paragraphs.paragraphs_type.component_accordion_item_cards
+id: paragraph.component_accordion_item_cards.field_aic_title
 field_name: field_aic_title
 entity_type: paragraph
-bundle: component_accordion_item
+bundle: component_accordion_item_cards
 label: Title
 description: ''
 required: false

@@ -1,15 +1,15 @@
-uuid: af3a3f7d-ccc5-4388-857d-a5108ff35594
+uuid: c5be03e0-d0a0-4827-a5d1-46e6c1b4e8e2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_aic_image
     - media.type.image
-    - paragraphs.paragraphs_type.component_accordion_item
-id: paragraph.component_accordion_item.field_aic_image
+    - paragraphs.paragraphs_type.component_accordion_item_cards
+id: paragraph.component_accordion_item_cards.field_aic_image
 field_name: field_aic_image
 entity_type: paragraph
-bundle: component_accordion_item
+bundle: component_accordion_item_cards
 label: Image
 description: ''
 required: false

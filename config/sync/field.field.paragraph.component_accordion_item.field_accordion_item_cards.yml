@@ -1,0 +1,55 @@
+uuid: 2fb3250c-2b6c-465d-9fa7-e0654b16a60f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_item_cards
+    - paragraphs.paragraphs_type.component_accordion_item
+    - paragraphs.paragraphs_type.component_accordion_item_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.component_accordion_item.field_accordion_item_cards
+field_name: field_accordion_item_cards
+entity_type: paragraph
+bundle: component_accordion_item
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      component_accordion_item_cards: component_accordion_item_cards
+    target_bundles_drag_drop:
+      component_accordion:
+        weight: 10
+        enabled: false
+      component_accordion_item:
+        weight: 11
+        enabled: false
+      component_accordion_item_cards:
+        enabled: true
+        weight: 12
+      component_accordion_item_content:
+        weight: 13
+        enabled: false
+      component_hero:
+        weight: 14
+        enabled: false
+      component_hero_text:
+        weight: 15
+        enabled: false
+      component_slideshow:
+        weight: 16
+        enabled: false
+      component_slideshow_slide:
+        weight: 17
+        enabled: false
+      component_title:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
