@@ -1,20 +1,17 @@
-#accordion > .card {
+/* #accordion > .card {
   background-color: $bb-extra-light;
   border: 0;
   border-radius: 0;
 }
 
-.card-header{
-  background-color: black;
-}
-#accordion .card .card-header {
+#heading-accordion-1 {
   padding: 0;
-  background-color: $bb-blue-mid;
+  background-color: red;//$bb-blue-mid;
   border-bottom: 1px solid rgba(221, 221, 221, 0.2);
   border-radius: 0;
 }
 
-#accordion .card .card-header .btn-link {
+#accordion .card-header .btn-link {
   color: $bb-light;
   display: block;
   padding: 1rem;
@@ -35,9 +32,78 @@
   }
  }
  
- #accordion .card .card-header [data-toggle="collapse"].collapsed {
+ #accordion .card-header [data-toggle="collapse"].collapsed {
   &::after {
     transform: rotate(180deg);
     top: 1.5rem;
   }
- }
+ } */
+ 
+
+ #accordion { 
+  // accordion header
+  .card-header {
+      background-color: $bb-blue-mid;
+      border-bottom: 1px solid rgba(221, 2221, 221, 0.2);
+      border-radius: 0;
+      padding: 0;
+  
+      // accordion title 
+      .btn-link {
+          color: $bb-extra-light;
+          display: block;
+          padding: 1rem;
+          text-align: left;
+          text-decoration: none;
+          width: 100%;
+          position: relative;
+          
+          // in same location arrow is created
+          &::after {
+              content:"";
+              border-style: solid;
+              border-width: 8px;
+              border-color: transparent transparent $bb-light transparent;
+              position: absolute;
+              top: 1rem;
+              right: 3rem;
+              transition: transform 400ms;
+          }
+      }
+
+      // accordion arrow movement
+      [data-toggle="collapse"].collapsed {
+
+          &::after {
+              transform: rotate(180deg);
+              top: 1.5rem;
+          }
+      }
+  }
+  //header gradient
+  .collapse {
+      &::before {
+          @include gradient-y(rgba($bb-dark, .40), rgba($bb-dark, 0));
+          content: "";
+          display: block;
+          height: 1.5rem;
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+  }
+}
+
+//accordion background color
+#accordion > .card {
+  background-color: $bb-extra-light;
+  border: 0;
+  border-radius: 0;
+}
+
+.contextual-region .media-image img{
+  background-color: red;
+  vertical-align: middle;
+} 

@@ -8,21 +8,21 @@ div.card--customer {
   }
 }
 
-.card--customer .card-body{
+.card--customer .card-body {
   background: $bb-light;
 
   h5 {
     font-size: $font-size-small;
 
-    @include media-breakpoint-up(sm){
+    @include media-breakpoint-up(sm) {
       font-size: $font-size-base;
     }
 
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md) {
       font-size: $font-size-large;
     }
 
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
       font-size: $font-size-largest;
     }
   }

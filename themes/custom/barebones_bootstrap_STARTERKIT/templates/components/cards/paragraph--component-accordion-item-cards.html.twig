@@ -47,21 +47,17 @@
     'card',
     'card--customer',
     'text-center',
-    'accordion',
   ]
 %}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
     {% block content %}
-
-    <img class = "card__media"> {{ content.field_aic_image }} </img>
-    
-    <div class = "card-body">
-        <h5 class = "card-title"> {{ content.field_aic_title }} </h5>
-        <p class = "card-text"> {{ content.field_aic_text }} </p>
-        {{ content.field_aic_link }}
-    </div>
-        
+      <div> {{ content.field_aic_image }} </div>
+      <div class = "card-body">
+          <h5 class = "card-title"> {{ content.field_aic_title }} </h5>
+          <p class = "card-text"> {{ content.field_aic_text }} </p>
+          {{ content.field_aic_link }}
+      </div>  
     {% endblock %}
     </div>
 {% endblock paragraph %}
