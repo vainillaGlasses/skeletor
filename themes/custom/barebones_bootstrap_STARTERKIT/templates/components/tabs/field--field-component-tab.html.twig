@@ -12,11 +12,12 @@
   'field--type-' ~ field_type|clean_class,
   'field--label-' ~ label_display,
   'tabs-accordion',
+  'row'
   ]
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  <nav role="naviation" class="tabs-accordion__nav d-none d-md-block">
+  <nav role="navigation" class="tabs-accordion__nav d-none d-md-block col-12 col-md-3">
     <div class="nav nav-tabs" id="nav-{{ tab_id }}" role="tablist">
       {% for item in items %}
         {% if loop.first %}
@@ -32,7 +33,7 @@
     </div>
   </nav>
 
-  <div class="tab-content tabs-accordion__content" id="content-{{ tab_id }}">
+  <div class="tab-content tabs-accordion__content col-12 col-md-9" id="content-{{ tab_id }}">
     {% for item in items %}
       {% if loop.first %}
         <div class="tabs-accordion__pane card tab-pane fade show active" id="pane-{{ tab_id }}-{{ loop.index }}" role="tabpanel" aria-labelledby="nav-{{ tab_id }}-{{ loop.index }}">
