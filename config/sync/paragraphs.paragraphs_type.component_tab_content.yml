@@ -1,0 +1,11 @@
+uuid: dba4d055-561e-4ea5-bcd1-8d35d1da72de
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wm6_yu_3Hb7Y9765RxYIy-9mwqHVK35Kv8HsvoqB68s
+id: component_tab_content
+label: 'Tab Content'
+icon_uuid: null
+description: 'Container for content inside individual tab.'
+behavior_plugins: {  }

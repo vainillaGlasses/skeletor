@@ -59,6 +59,7 @@ module:
   skeletor_hero: 0
   skeletor_media: 0
   skeletor_slideshow: 0
+  skeletor_tabs_component: 0
   skeletor_title_component: 0
   statistics: 0
   svg_image: 0

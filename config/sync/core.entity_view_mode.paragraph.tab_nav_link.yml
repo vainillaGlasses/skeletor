@@ -1,0 +1,12 @@
+uuid: 524e411e-5afa-4252-96c7-be2a53ce3486
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 9qlknij5hrJ9ZFsQE1R8WQKoGNkXd-VaJhV-bkkhaVM
+id: paragraph.tab_nav_link
+label: 'Tab Nav Link'
+targetEntityType: paragraph
+cache: true

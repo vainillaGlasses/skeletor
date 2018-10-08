@@ -1,0 +1,13 @@
+uuid: 5a0ac01e-2137-4500-872f-c98cd9c582b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_tabs
+_core:
+  default_config_hash: CSXp91HUIgqz9l6L0Z7CI7-FBraEIWzsymazuyRbe0g
+id: block_content.skeletor_tabs
+target_entity_type_id: block_content
+target_bundle: skeletor_tabs
+default_langcode: site_default
+language_alterable: false
