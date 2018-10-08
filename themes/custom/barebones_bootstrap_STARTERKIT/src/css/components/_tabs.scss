@@ -1,6 +1,22 @@
 // Styles for Skeletor Tabs/Accordion component.
 // -----------------------------------------------------------------------------
 
+.tabs-accordion {
+  background-color: $bb-light;
+  color: $bb-grey-dark;
+  min-height: 400px;
+}
+
+.tabs-accordion.row {
+    border: 1px solid $bb-grey-mid;
+    border-radius: 4px;
+  }
+
+  .tabs-accordion .card {
+    background-color: transparent;
+    border-radius: 0;
+  }
+
 .tabs-accordion__content > .tab-pane {
   // sass-lint:disable-block no-important
   @include media-breakpoint-down(sm) {
@@ -13,4 +29,42 @@
   @include media-breakpoint-up(md) {
     border: 0 none;
   }
+}
+
+.tabs-accordion__nav {
+  background-color: darken($bb-light, 5%);
+  color: $bb-grey-mid;
+  font-size: $font-size-small;
+  padding: 0;
+}
+
+.tabs-accordion__nav a {
+  color: $bb-dark;
+}
+
+.tabs-accordion__nav .nav {
+  margin-top: 20px;
+}
+
+.tabs-accordion__nav h3 {
+  color: $bb-dark;
+  font-size: $font-size-base;
+  font-weight: bold;
+}
+
+.tabs-accordion .nav-item {
+  width: 100%;
+}
+
+.tabs-accordion .nav-link {
+  border-left: 10px solid transparent;
+}
+
+.tabs-accordion .nav-link.active {
+  border-left: 10px solid $bb-blue-mid;
+  background-color: darken($bb-light, 10%);
+}
+
+.tabs-accordion .nav-link.active h3 {
+  border-bottom: 1px solid $bb-orange;
 }
