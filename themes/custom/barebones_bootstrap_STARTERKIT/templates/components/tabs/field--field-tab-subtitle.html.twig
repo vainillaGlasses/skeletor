@@ -1,0 +1,18 @@
+{#/**
+* @file
+* Tab subtitle field override.
+*
+*/
+#}
+{%
+ set classes = [
+   'container-fluid',
+   ]
+%}
+<div{{ attributes.addClass(classes) }}>
+{% for item in items %}
+   <div>
+       <p> {{ item.content }} </p>
+   </div>
+{% endfor %}
+</div>

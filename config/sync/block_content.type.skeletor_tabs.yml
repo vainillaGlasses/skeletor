@@ -1,0 +1,10 @@
+uuid: 27e02c32-74f5-4b03-b492-e38db916f932
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UopJfkwr88Hx856Bp1_vO2-u4ds1H_GDBb2ZfWznMM8
+id: skeletor_tabs
+label: Tabs
+revision: 0
+description: 'Create tabs block using Skeletor tabs component.'

@@ -1,0 +1,11 @@
+uuid: 404429df-a1e6-4404-8583-869d694c0c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tabs
+id: node.tabs
+target_entity_type_id: node
+target_bundle: tabs
+default_langcode: site_default
+language_alterable: false

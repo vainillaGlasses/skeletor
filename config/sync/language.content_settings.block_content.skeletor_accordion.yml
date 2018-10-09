@@ -1,0 +1,13 @@
+uuid: 27fd1f0d-54ad-4264-9c2c-35b8da691ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.skeletor_accordion
+_core:
+  default_config_hash: HdYMuOciGwWbpMm2n5G0axS5LfC3VeLzKBqewrJ78K0
+id: block_content.skeletor_accordion
+target_entity_type_id: block_content
+target_bundle: skeletor_accordion
+default_langcode: site_default
+language_alterable: false

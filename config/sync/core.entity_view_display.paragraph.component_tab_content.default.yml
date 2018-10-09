@@ -1,0 +1,24 @@
+uuid: bb5aae16-5cf2-4816-85b7-363f6d905c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_tab_content.field_tab_content_text
+    - paragraphs.paragraphs_type.component_tab_content
+  module:
+    - text
+_core:
+  default_config_hash: 6EVnJw5j4ioDEpAgc5Fg1VorW_O2I8cgKYB_VWV2A7c
+id: paragraph.component_tab_content.default
+targetEntityType: paragraph
+bundle: component_tab_content
+mode: default
+content:
+  field_tab_content_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

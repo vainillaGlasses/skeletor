@@ -1,0 +1,23 @@
+uuid: 9614c10f-0c91-4322-8a6d-afc8d3e17e5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tabs.field_tab_content
+    - node.type.tabs
+  module:
+    - user
+id: node.tabs.teaser
+targetEntityType: node
+bundle: tabs
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_tab_content: true
+  langcode: true

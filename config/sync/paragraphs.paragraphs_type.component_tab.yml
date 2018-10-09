@@ -1,0 +1,11 @@
+uuid: e3e84c75-0685-4252-b2c2-a1bd8c2f09c8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1jA7hsjzaNdHAKZ_W6wXyQd9A7he8WD_mSoesxS0N5M
+id: component_tab
+label: Tab
+icon_uuid: null
+description: 'Individual tab for tabs component.'
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: ae8404cd-7722-4c19-b217-c6e6c1cf3f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_accordion_item_content.field_accordion_item_text
+    - paragraphs.paragraphs_type.component_accordion_item_content
+  module:
+    - text
+_core:
+  default_config_hash: W0lavJ5U6SDmBJEZ_XCvymHnfVIS9-0q1Ir3setumkc
+id: paragraph.component_accordion_item_content.default
+targetEntityType: paragraph
+bundle: component_accordion_item_content
+mode: default
+content:
+  field_accordion_item_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

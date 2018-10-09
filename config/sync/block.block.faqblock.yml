@@ -1,4 +1,4 @@
-uuid: e1c8edd5-86f2-4301-84df-877883f3fe1f
+uuid: 4f110a33-2469-4683-89e3-7d7b98bc9b91
 langcode: en
 status: true
 dependencies:
@@ -7,15 +7,15 @@ dependencies:
     - faq_module
   theme:
     - barebones_bootstrap_STARTERKIT
-id: faq_accordion
+id: faqblock
 theme: barebones_bootstrap_STARTERKIT
 region: content
 weight: 0
 provider: null
-plugin: faq_accordion
+plugin: faq_block
 settings:
-  id: faq_accordion
-  label: Faq_accordion
+  id: faq_block
+  label: 'Faq block'
   provider: faq_module
   label_display: visible
 visibility:

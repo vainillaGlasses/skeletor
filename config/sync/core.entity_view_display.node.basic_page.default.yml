@@ -1,0 +1,31 @@
+uuid: 907a95ef-107d-42ed-9b09-dbb83a797c6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.field_bp_accordion
+    - node.type.basic_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  field_bp_accordion:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

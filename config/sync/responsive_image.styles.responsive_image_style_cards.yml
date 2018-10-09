@@ -1,0 +1,74 @@
+uuid: 397b21e1-5892-464b-b57d-ee5b6621420c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.card_lg
+    - image.style.card_xs
+  theme:
+    - barebones_bootstrap_STARTERKIT
+id: responsive_image_style_cards
+label: Cards
+image_style_mappings:
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xxl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xxl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.lg
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.md
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.sm
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_lg
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_xs
+  -
+    breakpoint_id: barebones_bootstrap_STARTERKIT.xs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: card_xs
+breakpoint_group: barebones_bootstrap_STARTERKIT
+fallback_image_style: card_xs

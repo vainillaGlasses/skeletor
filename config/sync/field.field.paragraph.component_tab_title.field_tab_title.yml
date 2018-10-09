@@ -1,0 +1,21 @@
+uuid: 572730fd-4f35-465e-a346-51ed0fb6c150
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_title
+    - paragraphs.paragraphs_type.component_tab_title
+_core:
+  default_config_hash: QqWM4cJM5C98lTp0i3w-AJl23QzX8Q2q3qR2XjN-ZD4
+id: paragraph.component_tab_title.field_tab_title
+field_name: field_tab_title
+entity_type: paragraph
+bundle: component_tab_title
+label: 'Tab Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

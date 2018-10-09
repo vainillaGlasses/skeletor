@@ -1,0 +1,11 @@
+uuid: 89a71e41-15cc-4e68-8e16-c809af0a7fc9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O8YXAGVJe1VpwF0tjiPvgChrtSPgB8b9gwtWF1-9OgI
+id: component_accordion
+label: 'Accordion Component'
+icon_uuid: null
+description: 'Wrapper for multiple accordion items.'
+behavior_plugins: {  }

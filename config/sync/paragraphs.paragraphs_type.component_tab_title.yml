@@ -1,0 +1,11 @@
+uuid: 771318d7-4b17-4cfe-a35e-c849f0d69a0a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RV8hufnmH2HdNcmVoFSIwlCZPza_ib3EKYdaMaOnKfo
+id: component_tab_title
+label: 'Tab Title'
+icon_uuid: null
+description: 'Title for individual tab'
+behavior_plugins: {  }

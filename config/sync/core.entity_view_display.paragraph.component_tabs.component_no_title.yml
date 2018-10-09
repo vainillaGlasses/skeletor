@@ -1,0 +1,29 @@
+uuid: 322f0946-a979-411d-9eda-aa8ecb0e1515
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.component_no_title
+    - field.field.paragraph.component_tabs.field_component_tab
+    - field.field.paragraph.component_tabs.field_component_tabs_title
+    - paragraphs.paragraphs_type.component_tabs
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: XPBVMJlbf0bQsh5WOplaFtOYVKmAr___5Ud59ZOh4f8
+id: paragraph.component_tabs.component_no_title
+targetEntityType: paragraph
+bundle: component_tabs
+mode: component_no_title
+content:
+  field_component_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_component_tabs_title: true

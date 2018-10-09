@@ -1,0 +1,9 @@
+uuid: d77bc41a-1843-4ea8-98ed-1dbc2f4848ae
+langcode: en
+status: true
+dependencies: {  }
+id: component_accordion_item_cards
+label: 'Accordion Item Cards'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

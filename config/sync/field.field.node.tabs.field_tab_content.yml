@@ -1,0 +1,67 @@
+uuid: 5111917c-e240-4f02-a154-257a8ff0bf95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tab_content
+    - node.type.tabs
+    - paragraphs.paragraphs_type.component_tabs
+  module:
+    - entity_reference_revisions
+id: node.tabs.field_tab_content
+field_name: field_tab_content
+entity_type: node
+bundle: tabs
+label: 'Tab Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      component_tabs: component_tabs
+    target_bundles_drag_drop:
+      component_accordion:
+        weight: 14
+        enabled: false
+      component_accordion_item:
+        weight: 15
+        enabled: false
+      component_accordion_item_cards:
+        weight: 16
+        enabled: false
+      component_accordion_item_content:
+        weight: 17
+        enabled: false
+      component_hero:
+        weight: 18
+        enabled: false
+      component_hero_text:
+        weight: 19
+        enabled: false
+      component_slideshow:
+        weight: 20
+        enabled: false
+      component_slideshow_slide:
+        weight: 21
+        enabled: false
+      component_tab:
+        weight: 22
+        enabled: false
+      component_tab_content:
+        weight: 23
+        enabled: false
+      component_tab_title:
+        weight: 24
+        enabled: false
+      component_tabs:
+        enabled: true
+        weight: 25
+      component_title:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

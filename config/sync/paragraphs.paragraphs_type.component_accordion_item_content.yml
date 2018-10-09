@@ -1,0 +1,11 @@
+uuid: 1e066007-3177-474a-a2a3-ad5059ef9a7b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YV2urzKvMVXTW_AZyjAx6xgfgd3D5PckNiDk4j-pDXg
+id: component_accordion_item_content
+label: 'Accordion Item Content'
+icon_uuid: null
+description: 'The main content container for an accordion item.'
+behavior_plugins: {  }

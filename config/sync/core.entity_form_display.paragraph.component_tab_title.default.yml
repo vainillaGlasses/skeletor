@@ -1,0 +1,35 @@
+uuid: d899e578-9ea0-4136-8d5a-22a66caf45f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.component_tab_title.field_tab_subtitle
+    - field.field.paragraph.component_tab_title.field_tab_title
+    - paragraphs.paragraphs_type.component_tab_title
+_core:
+  default_config_hash: es2KYMz40e5CjlxRkAhpNI1kzv_cmicfOqvoo7ESp6g
+id: paragraph.component_tab_title.default
+targetEntityType: paragraph
+bundle: component_tab_title
+mode: default
+content:
+  field_tab_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tab_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

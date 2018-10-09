@@ -1,0 +1,19 @@
+uuid: 2f07ee0d-6599-4d13-a6af-7a988c90f9ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aic_text
+    - paragraphs.paragraphs_type.component_accordion_item_cards
+id: paragraph.component_accordion_item_cards.field_aic_text
+field_name: field_aic_text
+entity_type: paragraph
+bundle: component_accordion_item_cards
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
