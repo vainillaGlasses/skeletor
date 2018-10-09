@@ -23,7 +23,8 @@
     "drupal/devel": "^1.2",
     "drupal/default_content_deploy": "^1.0@alpha",
     "drupal/config_split": "^1.4",
-    "drupal/hook_event_dispatcher": "^1.19"
+    "drupal/hook_event_dispatcher": "^1.19",
+    "drupal/webform": "^5.0@RC"
   },
   "require-dev": {
     "TestDrupal/BehatExtension": "dev-update",
