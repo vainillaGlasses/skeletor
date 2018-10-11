@@ -56,7 +56,7 @@
       <div class = "card-body">
           <h5 class = "card-title"> {{ content.field_aic_title }} </h5>
           <p class = "card-text"> {{ content.field_aic_text }} </p>
-          {{ content.field_aic_link }}
+          {{ link(link.text, link.url, {'class': ['btn', 'btn-primary']}) }}
       </div>  
     {% endblock %}
     </div>
