@@ -30,4 +30,13 @@ function barebones_bootstrap_STARTERKIT_preprocess_field(array &$variables) {
       $item['tab_nav_link']['#view_mode'] = 'tab_nav_link';
     }
   }
+
+ /*
+  if ($field_name == 'field_aic_link') {
+    foreach ($variables['items'] as &$item) {
+      $item['content']['#title'] = 'What Wiki Says?';
+    }
+  }
+  */
+
 }

@@ -1,0 +1,15 @@
+{#
+/**
+* @file
+* Cards link field override.
+*
+\#}
+{%
+    set classes = []
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    {% for item in items %}
+        {{ item.content }}
+    {% endfor %}
+</div>
