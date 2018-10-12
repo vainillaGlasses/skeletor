@@ -18,12 +18,12 @@ function barebones_bootstrap_STARTERKIT_preprocess_paragraph(&$vars) {
       if (!$paragraph->field_aic_link->isEmpty()) {
         $vars['link']['url'] = $paragraph->field_aic_link->getValue()[0]['uri'];
         $vars['link']['text'] = $paragraph->field_aic_link->getValue()[0]['title'];
-        kint('full');
+        //kint('full');
       }
       else {
         $vars['link']['url'] = Url::fromRoute('<front>');
         $vars['link']['text'] = 'Contact us';
-        kint('empty');
+        //kint('empty');
       }
     break;
   }
