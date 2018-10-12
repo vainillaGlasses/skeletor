@@ -17,6 +17,10 @@ Encore
     // will create dist/app.js and dist/app.css
     .addEntry('app', './src/js/app.js')
 
+    // For Scroll Reveal
+    // will create dist/component-reveal.js
+    .addEntry('component-reveal', './src/js/component-reveal.js')
+
     // allow legacy applications to use $/jQuery as a global variable
     .autoProvidejQuery()
 

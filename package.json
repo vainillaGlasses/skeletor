@@ -13,7 +13,9 @@
     "sync-exec": "^0.6.2",
     "through2": "^2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "scrollreveal": "^4.0.4"
+  },
   "scripts": {
     "gulp": "gulp",
     "test": "gulp phplint && gulp drupalcs && gulp eslint"

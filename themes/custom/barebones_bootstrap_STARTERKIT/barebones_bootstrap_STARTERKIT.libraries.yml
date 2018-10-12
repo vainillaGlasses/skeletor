@@ -8,3 +8,10 @@ bootstrap:
   dependencies:
     - core/jquery.once
     - core/drupal
+
+componentReveal:
+  js:
+    dist/component-reveal.js: {}
+  dependencies: 
+    - core/jquery
+    - core/drupal
