@@ -1,17 +1,17 @@
-uuid: 613bf159-1572-4385-bd65-4722e6de8498
+uuid: feabe462-f0fc-4c9b-bfe9-a052f2604726
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.product.body
-    - node.type.product
+    - field.field.node.simple_article.body
+    - node.type.simple_article
   module:
     - text
     - user
-id: node.product.teaser
+id: node.simple_article.teaser
 targetEntityType: node
-bundle: product
+bundle: simple_article
 mode: teaser
 content:
   body:
@@ -28,5 +28,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_product_slide: true
   langcode: true

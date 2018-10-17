@@ -1,0 +1,29 @@
+uuid: 08099edd-5b1c-4bf0-a092-3746079095d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simple_article_category
+    - node.type.simple_article
+    - taxonomy.vocabulary.simple_article_category
+id: node.simple_article.field_simple_article_category
+field_name: field_simple_article_category
+entity_type: node
+bundle: simple_article
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      simple_article_category: simple_article_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
