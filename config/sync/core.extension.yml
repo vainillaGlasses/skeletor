@@ -55,6 +55,7 @@ module:
   rabbit_hole: 0
   rdf: 0
   responsive_image: 0
+  rest: 0
   robotstxt: 0
   search: 0
   serialization: 0
