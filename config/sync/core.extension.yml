@@ -44,6 +44,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  masters_of_the_universe: 0
   media: 0
   menu_ui: 0
   node: 0
