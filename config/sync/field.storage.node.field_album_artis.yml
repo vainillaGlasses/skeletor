@@ -1,0 +1,21 @@
+uuid: 90f8f2f4-c8e5-4f3e-984a-1626e043ecae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_album_artis
+field_name: field_album_artis
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
