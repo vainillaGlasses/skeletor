@@ -1,0 +1,17 @@
+uuid: a7d03153-3331-47bb-94da-21b8fd27ce63
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - system
+    - user
+id: entity.action
+plugin_id: 'entity:action'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie
