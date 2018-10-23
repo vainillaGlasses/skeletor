@@ -14,6 +14,7 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'post comments'
+  - 'restful get albums'
   - 'search content'
   - 'skip comment approval'
   - 'view media'

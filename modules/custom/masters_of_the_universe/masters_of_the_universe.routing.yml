@@ -6,3 +6,11 @@ masters_of_the_universe.album_controller_app:
     _title: 'Albums'
   requirements:
     _permission: 'access content'
+
+masters_of_the_universe.album_controller_app_76:
+  path: 'masters_of_the_universe/albums'
+  defaults:
+    _controller: '\Drupal\masters_of_the_universe\Controller\AlbumController::app'
+    _title: 'Albums'
+  requirements:
+    _permission: 'access content'

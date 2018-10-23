@@ -1,13 +1,13 @@
-uuid: a7d03153-3331-47bb-94da-21b8fd27ce63
+uuid: 9607a284-9301-4f6a-977d-761030424829
 langcode: en
 status: true
 dependencies:
   module:
+    - masters_of_the_universe
     - serialization
-    - system
     - user
-id: entity.action
-plugin_id: 'entity:action'
+id: albums
+plugin_id: albums
 granularity: method
 configuration:
   GET:

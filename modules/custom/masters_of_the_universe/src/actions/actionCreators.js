@@ -7,12 +7,12 @@ export function getData() {
   return function (dispatch, getState) {
     dispatch(getDataPending())
     $.ajax({
-        url: '/api/react_redux_skeletor/data',
-        type: 'GET',
-        timeout: 5000
-      })
+      url: '/api/albums?_format=json',
+      type: 'GET',
+      timeout: 5000
+    })
       .done(function(response) {
-        dispatch(getDataSuccess(response))
+        dispatch(getDataSuccess(response.albums))
       })
       .error(function(jqXHR, textStatus, errorThrown) {
         dispatch(getDataFail(textStatus))
@@ -40,3 +40,11 @@ function getDataFail(error) {
   }
 }
 
+
+export function searchTitle(search) {
+  return {
+    type: 'SEARCH_TITLE',
+    search
+  }
+
+}

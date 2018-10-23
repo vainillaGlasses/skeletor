@@ -25,6 +25,15 @@ function data(state = defaultState, action) {
         isFetching: false,
         error: action.error
       }
+    case 'SEARCH_TITLE':
+      const filteresData = state.data.filter((node)=>{
+        return ñode.title.toLowerCase().indexOf(action.search.toLowerCase());
+      })
+      return{
+        ...state,
+        filteredData: filteredData,
+      }
+
     default:
       return state;
   }
