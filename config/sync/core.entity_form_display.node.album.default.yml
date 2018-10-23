@@ -3,13 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.album.field_album_artis
-    - field.field.node.album.field_album_cover
-    - field.field.node.album.field_album_date
+    - field.field.node.album.field_artist
+    - field.field.node.album.field_cover
+    - field.field.node.album.field_released
+    - image.style.thumbnail
     - node.type.album
   module:
     - datetime
     - path
+    - svg_image
 id: node.album.default
 targetEntityType: node
 bundle: album
@@ -21,7 +23,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_album_artis:
+  field_artist:
     weight: 121
     settings:
       size: 60
@@ -29,16 +31,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_album_cover:
-    weight: 122
+  field_cover:
+    weight: 124
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: image_image
     region: content
-  field_album_date:
+  field_released:
     weight: 123
     settings: {  }
     third_party_settings: {  }

@@ -1,12 +1,12 @@
-uuid: 49962102-b424-4463-8f13-6059f52ecfb2
+uuid: 585fef3e-a73e-46f4-be45-8d296345e203
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_album_artis
+    - field.storage.node.field_artist
     - node.type.album
-id: node.album.field_album_artis
-field_name: field_album_artis
+id: node.album.field_artist
+field_name: field_artist
 entity_type: node
 bundle: album
 label: Artis
