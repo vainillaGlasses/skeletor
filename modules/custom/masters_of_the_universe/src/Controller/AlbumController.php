@@ -18,7 +18,7 @@ class AlbumController extends ControllerBase {
   public function app() {
     return [
       '#type' => 'markup',
-      '#markup' => $this->t('<div id="app"></div>'),
+      '#markup' => $this->t('<div id="root">"sammy"</div>'),
       '#attached' => [
         'library' => [
           'masters_of_the_universe/masters_of_the_universe',

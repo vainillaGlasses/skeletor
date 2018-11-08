@@ -1,6 +1,6 @@
-master_of_the_universe:
+masters_of_the_universe:
     version: 1.x
     js:
-      js/master_of_the_universe/build/app.js: {}
+      js/masters_of_the_universe/dist/build/static/js/bundle.js: {}
     dependencies:
       - core/jquery
