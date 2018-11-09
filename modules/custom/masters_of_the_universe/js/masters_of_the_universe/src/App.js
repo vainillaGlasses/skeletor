@@ -5,9 +5,13 @@ import './App.css';
 import axios from 'axios';
 
 class App extends Component {
-  state = {
-    albums: []
-  }
+
+  constructor(props){
+    super(props);
+      this.state = {
+        albums: []
+    }
+}
 
   componentDidMount() {
     axios.get('http://skeletor.docker/api/albums?_format=json')
